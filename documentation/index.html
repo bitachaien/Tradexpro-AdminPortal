@@ -1,0 +1,1918 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tradexpro Exchange</title>
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+    <link rel="shortcut icon" href="assets/images/fav.png">
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/jquery.tocify.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/rainbow/themes/github.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/rainbowlines/theme.css" media="screen" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link href="../assets/ico/" rel="shortcut icon">
+    <link href="../assets/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="../assets/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="../assets/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="../assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-bottom:120px;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tradexpro Exchange <small>v1.1</small></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="index.html">Home</a></li> -->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div class="container-fluid" style="margin-top:50px;">
+        <div class="row">
+            <div class="tocify col-sm-3 col-md-3">
+                <div id="toc">
+                    <h4 class="sidebar-title">Web</h4>
+                    <div id="web"></div>
+                    <br><br>
+                    <!--<h4 class="sidebar-title">App</h4>-->
+                    <div id="app"></div>
+                </div>
+                <!--/.well -->
+            </div>
+            <!--/span-->
+            <div class="col-sm-9 col-md-9">
+                <div class="section">
+                    <h2 class="title-tag">Introduction</h2>
+
+                    <h3 class="title-tag">Details</h3>
+                    <div class="well">
+                        <p class="">
+                            Tradexpro Exchange is a complete crypto coins exchange platform developed with Laravel and next js.
+                            It is the best choice to buy, sell or exchange any crypto coin that works via coin payment or bitcoin fork node.
+                            It will connect with a coin payment merchant account, or also connect with node.
+                            Our system is 100% secure and dynamic. It supports all cryptocurrency wallets including Coin Payment, Buy , Sell , Stop Limit,
+                            Deposit, Withdrawal, Referral system, and whatever you need. The most attractive feature of this platform is trading.
+                            In the trading system, you can place buy and sell orders according to your preferences of coin prices. Beside that, you can check
+                            your balance from wallet section. You can also check your  buy-sell transaction status, deposit, withdrawal histories.</p>
+                        <p>
+                            <a target="_blank" href="https://tradexpro-exchange.cdibrandstudio.com/exchange/dashboard/">Demo</a>
+                            <br />
+                        </p>
+                    </div>
+                    <hr>
+
+                    <h3 class="title-tag">Getting Started</h3>
+                    <div class="well">
+                        The application has a few system requirements, so you will need to make sure your server meets the following requirements:
+                        <p>Admin side requirement : </p>
+                        <ol>
+                            <li>Laravel 5.8+ </li>
+                            <li>PHP 7.4 </li>
+                            <li>MySQL 8.0</li>
+                            <li>Intl PHP Extension</li>
+                            <li>OpenSSL PHP Extension</li>
+                            <li>PDO PHP Extension</li>
+                            <li>Mbstring PHP Extension</li>
+                            <li>Tokenizer PHP Extension</li>
+                            <li>XML PHP Extension</li>
+                            <li>Ctype PHP Extension</li>
+                            <li>JSON PHP Extension</li>
+                            <li>cURL PHP Extension</li>
+                            <li>GD PHP Extension</li>
+                            <li>ZIP PHP Extension</li>
+                            <li>BC Math</li>
+                            <li>Process Control System (Preferred Supervisord)</li>
+                            <li>PHP Dependency Manager (Preferred Composer)</li>
+                            <li>Redis Server For Queue Management</li>
+                            <li>Setup Horizon Supervisor</li>
+                        </ol>
+                        <hr>
+                        <p>User side requirement : </p>
+                        <ol>
+                            <li>Nodejs 16.16.0 </li>
+                            <li>Yarn 1.22.19 or above</li>
+                            <li>Nginx</li>
+                        </ol>
+                    </div>
+                    <hr>
+
+                    <h3 class="title-tag">Permissions</h3>
+                    <div class="well">
+                        After uploading the Tradexpro exchange to your server, you may need to
+                        configure some permissions. Firstly set all your directories permission to 755 and
+                        files to 644. Directories within the storage, vendor and the bootstrap/cache
+                        directories should be writable by your web server. Set permission to 775 for storage,
+                        vendor and the bootstrap/cache directories. So set these directories set the write permissions to the web server.
+                        <br>Example command
+                        <br>sudo chmod -R 777 /storage/
+                        <br>sudo chmod -R 777 /public/uploaded_file
+                    </div>
+                    <hr>
+
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Key Features</h2>
+                    <div class="well">
+                        <h3>Admin Side</h3>
+                        <p> <b>Admin Side Developed With <span style="color: orangered">LARAVEL</span></b> </p>
+                        <ul>
+                            <li>Complete user management</li>
+                            <li>Support coin payment or Personal node</li>
+                            <li>Multiple coin using coin payment or personal node or bitgo</li>
+                            <li>Coin management</li>
+                            <li>Buy / Sell order management</li>
+                            <li>Trading management</li>
+                            <li>Broadcast Email</li>
+                            <li>Trade report</li>
+                            <li>Buy sell report</li>
+                            <li>Deposit management</li>
+                            <li>Withdrawal management</li>
+                            <li>KYC verification</li>
+                            <li>Manage referral system</li>
+                            <li>Admin settings</li>
+                            <li>Trade fees setting</li>
+                            <li>Coin Payment setting</li>
+                            <li>Bitcoin Node setting</li>
+                            <li>Bitgo Api setting</li>
+                            <li>Re-capcha setting</li>
+                            <li>Sms setting using twillo</li>
+                            <li>Fees setting</li>
+                            <li>FAQ Management</li>
+                            <li>Landing Setting</li>
+                            <li>Fully responsive and dynamic</li>
+                            <li>Easy to signup & signin</li>
+                            <li>Email verification</li>
+                            <li>Forgot password</li>
+                            <li>Profile management</li>
+                            <li>Password setup</li>
+                            <li>Security management</li>
+                        </ul>
+                    </div>
+                    <div class="well">
+                        <h3>User Side</h3>
+                        <p> <b>User Side Developed With <span style="color: orange">Next Js</span></b> </p>
+                        <ul>
+                            <li>Easy to Signup & Signin</li>
+                            <li>Profile Management</li>
+                            <li>Notification</li>
+                            <li>Multi coin system</li>
+                            <li>Trading/ Exchange</li>
+                            <li>Order Book (buy, sell, stop limit)</li>
+                            <li>Coin Swap</li>
+                            <li>Supper easy and secure trading process</li>
+                            <li>Nice Wallet management</li>
+                            <li>Generate wallet address using coin payment or bitcoin node or bitgo</li>
+                            <li>Coin deposit system</li>
+                            <li>Coin withdrawal system</li>
+                            <li>Transaction Chart</li>
+                            <li>Deposit Chart</li>
+                            <li>Withdrawal Chart</li>
+                            <li>Google Auth Setup</li>
+                            <li>Phone Verification</li>
+                            <li>KYC System</li>
+                            <li>Password Setup</li>
+                            <li>Security Management</li>
+                            <li>An user can send coin to both internal and external address</li>
+                            <li>Use Google authentication</li>
+                            <li>Use Two factor authentication for login</li>
+                            <li>Three level Referral System</li>
+                            <li>Fully Responsive and Dynamic</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="title-tag">Files in Plugin</h2>
+                    <div class="well">
+                        <p>'Tradexpro Exchange' is bundled with files:</p>
+                        <ul>
+                            <li>Tradexpro-exchange-admin.zip</li>
+                            <li>Tradexpro-exchange-user.zip</li>
+                            <li>documentation.zip</li>
+                            <li>database.zip</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="section">
+                	<h2 class="title-tag"> Installation Process</h2>
+                    <h3 class="title-tag"> <b>Local Installation (Admin Part) </b></h3>
+                    <h4 class=""><b>Setup for local pc</b></h4>
+                    <div class="well">
+
+                        <ul class="">
+                            <li>It's a super easy installation process</li>
+                            <li>Need to create a database</li>
+                            <li>Go to phpmyadmin or you can create database by using command "create database tradexpro_exchange_db"</li>
+                            <img src="assets/images/install/local/db1.png" alt="" class="img-responsive">
+                            <img src="assets/images/install/local/db2.png" alt="" class="img-responsive">
+                            <img src="assets/images/install/local/db3.png" alt="" class="img-responsive">
+                            <li>Go to this path "/var/www/html/"</li>
+                            <p>Here you keep your file</p>
+                            <img src="assets/images/install/local/1.png" alt="" class="img-responsive">
+                            <p>open terminal in this path</p>
+                            <img src="assets/images/install/local/2.png" alt="" class="img-responsive">
+                            <p>write "php artisan serve" and hit enter</p>
+                            <img src="assets/images/install/local/3.png" alt="" class="img-responsive">
+                            <li>Then run the project and complete step by step installation</li>
+                            <p>Welcome page. Start the install process</p>
+                            <img src="assets/images/install/local/4.png" alt="" class="img-responsive">
+                            <p><b>After run the project you see this page</b></p>
+                            <img src="assets/images/install/local/5.png" alt="" class="img-responsive">
+                            <li class="">
+                                <p><b>Check server requirement</b></p>
+                                <img src="assets/images/install/local/6.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Check and give permission</b></p>
+                                <img src="assets/images/install/local/7.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Verify Envato Purchase code</b></p>
+                                <p>Put here your purchase code</p>
+                                <img src="assets/images/install/local/8.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/local/9.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/local/10.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Setup project Environment</b></p>
+                                <p>Give here your app title, database name, username, password etc</p>
+                                <img src="assets/images/install/local/11.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Then click the setup install button</b></p>
+                            </li>
+
+                            <li class="">
+                                <p><b>Installation Finish</b></p>
+                                <img src="assets/images/install/local/12.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/local/13.png" alt="" class="img-responsive">
+                            </li>
+                            <li>now click here to exit</li>
+                            <li class="">
+                                <p><b>Sign in page</b></p>
+                                <img src="assets/images/landing/landing.png" alt="" class="img-responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag"> <b>Installation (vps server) (admin part)</b></h3>
+                    <div class="well">
+                        <p><b>login to the server </b></p>
+                        <p>suppose "root@demo-server:"</p>
+                        <ul>
+                            <li>
+                                <p><b>install the "nginx"</b></p>
+                                <p class="text-primary"><b>"sudo apt install nginx"</b></p>
+                                <br>
+                                <img src="assets/images/server/vps/vps_1.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Get a listing of the application profiles:</b></p>
+                                <p class="text-primary"><b>sudo ufw app list</b></p>
+                                <img src="assets/images/server/vps/vps_2.png" alt="" class="img-responsive">
+                                <img src="assets/images/server/vps/vps_3.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>It is recommended that you enable the most restrictive profile that will still allow the traffic you’ve configured. Right now, we will only need to allow traffic on port 80.
+
+                                    You can enable this by typing:</b></p>
+                                <p class="text-primary"><b>sudo ufw allow 'Nginx HTTP'</b></p>
+                                <img src="assets/images/server/vps/vps_4.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>check the status</b></p>
+                                <p class="text-primary"><b>sudo ufw status</b></p>
+                                <img src="assets/images/server/vps/vps_5.png" alt="" class="img-responsive">
+                                <p>
+                                    As confirmed by this out, the service has started successfully. However, the best way to test this is to actually request a page from Nginx.
+
+                                    You can access the default Nginx landing page to confirm that the software is running properly by navigating to your server’s IP address.
+                                </p>
+                                <img src="assets/images/server/vps/vps_6.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Managing the Nginx Process</b></p>
+
+                                <img src="assets/images/server/vps/vps_nginx.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>then update </b></p>
+                                <p class="text-primary"><b>sudo apt-get update</b></p>
+                            </li>
+                            <li>
+                                <p><b>Now need to install php </b></p>
+                                <p class="text-primary"><b>sudo apt -y install php7.4</b></p>
+                                <img src="assets/images/server/vps/vps_7.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>We use nginx so disable the apache2 </b></p>
+                                <p class="text-primary"><b>sudo systemctl disable --now apache2</b></p>
+                                <img src="assets/images/server/vps/vps_8.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Install fpm </b></p>
+                                <p class="text-primary"><b>sudo apt-get install nginx php7.4-fpm</b></p>
+                                <img src="assets/images/server/vps/vps_9.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Install some php package </b></p>
+                                <p class="text-primary"><b>sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath</b></p>
+                                <img src="assets/images/server/vps/vps_10.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Install mysql server </b></p>
+                                <p class="text-primary"><b>sudo apt install mysql-server</b></p>
+                                <img src="assets/images/server/vps/vps_11.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>start mysql server  and check </b></p>
+                                <p class="text-primary"><b>sudo systemctl start mysql.service</b></p>
+                                <p class="text-primary"><b>mysql</b></p>
+                                <img src="assets/images/server/vps/vps_12.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Add password to user </b></p>
+                                <p class="text-primary"><b>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'myPassword';</b></p>
+                                <p class="text-primary"><b>flush privileges;</b></p>
+                                <img src="assets/images/server/vps/vps_13.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Create new database</b></p>
+                                <p class="text-primary"><b>create database demo;</b></p>
+                                <p class="text-primary"><b>quit;</b></p>
+                            </li>
+                            <li>
+                                <p><b>Go to nginx path </b></p>
+                                <p class="text-primary"><b>cd /etc/nginx/sites-available/</b></p>
+                                <p class="text-primary"><b>nano default</b></p>
+                                <img src="assets/images/server/vps/vps_14.png" alt="" class="img-responsive">
+                                <p><b>Delete everything and just keep as bellow image </b></p>
+                                <img src="assets/images/server/vps/vps_15.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Make a directory to /var/www/ path </b></p>
+                                <p class="text-primary"><b>cd /var/www/</b></p>
+                                <p class="text-primary"><b>mkdr demo</b> (demo is the folder name)</p>
+
+                                <p><b>inside the demo folder just keep the admin code file  (extract files) </b></p>
+                                <p><b>This should looks like ---></b></p>
+                                <img src="assets/images/server/vps/vps_16.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>create a new .env file and edit it </b></p>
+                                <p><b>add the database name, user name, password etc (can follow the .env.example file) </b></p>
+                                <p class="text-primary"><b>nano .env</b></p>
+                                <p><b>This should looks like ---></b></p>
+                                <img src="assets/images/server/vps/vps_17.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> install the composer </b></p>
+                                <p><b> if composer not found run this command first,</b></p>
+                                <p class="text-primary"><b>sudo apt install composer</b></p>
+                                <p><b>Then </b></p>
+                                <p class="text-primary"><b>composer install</b></p>
+                                <img src="assets/images/server/vps/vps_18.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Now need have some permission </b></p>
+                                <p class="text-primary"><b>sudo chgrp -R www-data storage bootstrap/cache</b></p>
+                                <p class="text-primary"><b>sudo chmod -R ug+rwx storage bootstrap/cache</b></p>
+                                <img src="assets/images/server/vps/vps_19.png" alt="" class="img-responsive">
+                                <p><b> another file need to give permission </b></p>
+                                <p class="text-primary"><b>sudo chmod -R 777 /public/uploaded_file</b></p>
+                            </li>
+                            <li>
+                                <p><b> Generate the key </b></p>
+                                <p class="text-primary"><b>php artisan key:generate</b></p>
+                            </li>
+                            <li>
+                                <p><b> Migration the database file also seed </b></p>
+                                <p class="text-primary"><b>php artisan migrate --seed</b></p>
+                            </li>
+                            <li>
+                                <p><b> Install passport package </b></p>
+                                <p class="text-primary"><b>php artisan passport:install</b></p>
+                            </li>
+                            <li>
+                                <p><b> Now all done. just open browser and check site </b></p>
+                                <img src="assets/images/server/vps/vps_20.png" alt="" class="img-responsive">
+
+                            </li>
+                            <li>
+                                <p><b> Another thing:  need to use supervisor so install first </b></p>
+                                <p class="text-primary"><b>sudo apt update && sudo apt install supervisor</b></p>
+                                <img src="assets/images/server/vps/vps_21.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Config supervisor  </b></p>
+                                <p class="text-primary"><b>sudo systemctl status supervisor</b></p>
+                                <p><b> got to this path and open cron.conf file</b></p>
+                                <p class="text-primary"><b>cd /etc/supervisor/conf.d/</b></p>
+                                <p class="text-primary"><b>nano cron.conf</b></p>
+                                <img src="assets/images/server/vps/vps_22.png" alt="" class="img-responsive">
+
+                                <p><b> inside this the cron.conf file write down the below code and save it </b></p>
+                                <p><b> here need to configure sockets, scheduler and horizon </b></p>
+                                <img src="assets/images/server/vps/vps_23.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Then run these command</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl reread</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl update</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl status</b></p>
+                                <img src="assets/images/server/vps/vps_24.png" alt="" class="img-responsive">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <hr>
+                    <h3 class="title-tag"> <b>Sub Domain Installation (Admin Part) </b></h3>
+                    <h4 class=""><b>Setup for sub domain</b></h4>
+                    <div class="well">
+
+                        <ul class="">
+                            <li>It's a super easy installation process</li>
+                            <li>Go to cpanel</li>
+                            <img src="assets/images/server/Screenshot_1.png" alt="" class="img-responsive">
+                            <li>Here is a sub domain named "tradexpro.itech-softsolutions.com"</li>
+                            <img src="assets/images/server/Screenshot_3.png" alt="" class="img-responsive">
+                            <li>Create a database</li>
+                            <img src="assets/images/server/Screenshot_4.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot4_1.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_5.png" alt="" class="img-responsive">
+                            <li>Create a database user</li>
+                            <img src="assets/images/server/Screenshot_6.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_8.png" alt="" class="img-responsive">
+                            <li>Add user to database</li>
+                            <img src="assets/images/server/Screenshot_9.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_10.png" alt="" class="img-responsive">
+                            <li>Then go to file manager</li>
+                            <img src="assets/images/server/Screenshot_12.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_13.png" alt="" class="img-responsive">
+                            <li>Go to your domain folder  "tradexpro.itech-softsolutions.com"</li>
+                            <img src="assets/images/server/Screenshot_14.png" alt="" class="img-responsive">
+                            <li>Upload here your web code</li>
+                            <img src="assets/images/server/Screenshot_15.png" alt="" class="img-responsive">
+                            <li>Select file</li>
+                            <img src="assets/images/server/Screenshot_16.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_17.png" alt="" class="img-responsive">
+                            <li>Unzip web-code.zip into domain folder</li>
+                            <img src="assets/images/server/Screenshot_18.png" alt="" class="img-responsive">
+                            <li>Extract the uploaded file then move the file into your site folder</li>
+                            <img src="assets/images/server/Screenshot_19.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_20.png" alt="" class="img-responsive">
+                            <li>Select all file and move to your site folder</li>
+                            <img src="assets/images/server/Screenshot_21.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_22.png" alt="" class="img-responsive">
+                            <li>Modify your subdomain root folder and add /public</li>
+                            <img src="assets/images/server/Screenshot_23.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_24.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_25.png" alt="" class="img-responsive">
+                            <li>Then run the project and complete step by step installation</li>
+                            <img src="assets/images/install/installer-1.png" alt="" class="img-responsive">
+                            <li>Then run the project and complete step by step installation</li>
+                            <p>Welcome page. Start the install process</p>
+                            <p><b>After run the project you see this page</b></p>
+                            <img src="assets/images/install/installer-1.png" alt="" class="img-responsive">
+                            <li class="">
+                                <p><b>Check server requirement</b></p>
+                                <img src="assets/images/install/installer-2.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Check and give permission</b></p>
+                                <img src="assets/images/install/installer-3.png" alt="" class="img-responsive">
+                               </li>
+                            <li class="">
+                                <p><b>Verify Envato Purchase code</b></p>
+                                <p>Put here your purchase code</p>
+                                <img src="assets/images/install/installer-4.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/installer-5.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Setup project Environment</b></p>
+                                <img src="assets/images/install/installer-6.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Fill up Environment Setup Form</b></p>
+                                <p>Give here your app title, database name, username, password etc</p>
+                                <img src="assets/images/install/installer-7.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Then click the setup install button</b></p>
+                            </li>
+
+                            <li class="">
+                                <p><b>Installation Finish</b></p>
+                                <img src="assets/images/install/installer-8.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/installer-9.png" alt="" class="img-responsive">
+                            </li>
+                            <li>Then open a browser and run the url like "http://tradexpro.itech-softsolutions.com/" and hit enter</li>
+                            <li class="">
+                                <p><b>Sign in page</b></p>
+                                <img src="assets/images/landing/landing.png" alt="" class="img-responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class=""><b>Installation for main domain (Admin Part)</b></h3>
+                    <div class="well">
+                        <ul class="">
+                        	<li>It's a super easy installation process</li>
+                            <li>Go to cpanel</li>
+                            <li>Create a database</li>
+                            <li>Create a database user</li>
+                            <li>Add user to database</li>
+                            <li>Then go to file manager</li>
+                            <li>Upload here your web code</li>
+                            <li>Select file</li>
+                            <li>Unzip web-code.zip into public_html folder</li>
+                            <li>Extract the uploaded file then move the file into public_html folder</li>
+                            <li>Select all file and move to your site folder</li>
+                            <li>Now select the example.htaccess file and rename it to .htaccess</li>
+                            <img src="assets/images/server/Screenshot_55.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_56.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_57.png" alt="" class="img-responsive">
+                            <img src="assets/images/server/Screenshot_58.png" alt="" class="img-responsive">
+                            <li>Then run the project and complete step by step installation</li>
+                            <img src="assets/images/install/installer-1.png" alt="" class="img-responsive">
+                            <li>Then run the project and complete step by step installation</li>
+                            <p>Welcome page. Start the install process</p>
+                            <p><b>After run the project you see this page</b></p>
+                            <img src="assets/images/install/installer-1.png" alt="" class="img-responsive">
+                            <li class="">
+                                <p><b>Check server requirement</b></p>
+                                <img src="assets/images/install/installer-2.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Check and give permission</b></p>
+                                <img src="assets/images/install/installer-3.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Verify Envato Purchase code</b></p>
+                                <p>Put here your purchase code</p>
+                                <img src="assets/images/install/installer-4.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/installer-5.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Setup project Environment</b></p>
+                                <img src="assets/images/install/installer-6.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Fill up Environment Setup Form</b></p>
+                                <p>Give here your app title, database name, username, password etc</p>
+                                <img src="assets/images/install/installer-7.png" alt="" class="img-responsive">
+                            </li>
+                            <li class="">
+                                <p><b>Then click the setup install button</b></p>
+                            </li>
+
+                            <li class="">
+                                <p><b>Installation Finish</b></p>
+                                <img src="assets/images/install/installer-8.png" alt="" class="img-responsive">
+                                <img src="assets/images/install/installer-9.png" alt="" class="img-responsive">
+                            </li>
+                            <li>Then open a browser and run the url like "http://tradexpro-exchange.com/" and hit enter</li>
+                            <li class="text-success">
+                                <p><b>Sign In page</b></p>
+                                <img src="assets/images/landing/landing.png" alt="" class="img-responsive">
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="title-tag"> <b>Installation in VPS server (user part)</b></h3>
+                    <div class="well">
+                        <p><b>login to the server </b></p>
+                        <p>suppose "root@demo-server:"</p>
+                        <ul>
+                            <li>
+                                <p><b>Make a directory to /var/www/ path </b></p>
+                                <p class="text-primary"><b>cd /var/www/</b></p>
+                                <p class="text-primary"><b>mkdr demonode</b> (demonode is the folder name)</p>
+
+                                <p><b>inside the demonode folder just keep the user code file  (extract files) </b></p>
+                                <p><b>This should looks like ---></b></p>
+                                <img src="assets/images/server/vps/vps1_1.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b>Install nodejs </b></p>
+                                <p class="text-primary"><b>sudo apt install nodejs</b></p>
+                                <img src="assets/images/server/vps/vps1_2.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> install yarn </b></p>
+                                <p class="text-primary"><b>sudo apt install yarn</b></p>
+                                <img src="assets/images/server/vps/vps1_3.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Now go to the demonode  path</b></p>
+                                <p class="text-primary"><b>cd /var/www/demonode/</b></p>
+                                <p class="text-primary"><b>yarn install</b></p>
+                                <img src="assets/images/server/vps/vps1_4.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Then go to this path  </b></p>
+                                <p class="text-primary"><b>cd /etc/nginx/sites-available/</b></p>
+                                <p class="text-primary"><b>cp -r default nodedemo</b></p>
+                                <p class="text-primary"><b>nano nodedemo</b></p>
+                                <img src="assets/images/server/vps/vps1_5.png" alt="" class="img-responsive">
+                                <p><b> in the file write down these code </b></p>
+                                <img src="assets/images/server/vps/vps1_6.png" alt="" class="img-responsive">
+                                <p><b> Then run this command </b></p>
+                                <p class="text-primary"><b>sudo ln -s /etc/nginx/sites-available/nodedemo /etc/nginx/sites-enabled/</b></p>
+                                <p class="text-primary"><b>service nginx reload</b></p>
+                                <p class="text-primary"><b>service nginx reload</b></p>
+                            </li>
+                            <li>
+                                <p><b> now time to build the project </b></p>
+                                <p class="text-primary"><b>cd /var/www/demonode/</b></p>
+                                <p><b> open the ".env.production" file </b></p>
+                                <p class="text-primary"><b>nano .env.production</b></p>
+                                <p><b> change the text </b></p>
+                                <p class="text-primary">
+                                    <b>NEXT_PUBLIC_BASE_URL ='your domain name /api'</b>
+                                </p>
+                                <p class="text-primary"><b>GENERATE_SOURCEMAP = false</b></p>
+                                <p class="text-primary">
+                                    <b
+                                    >NEXT_PUBLIC_WS_URL = 'wss://your domain name/app/test'</b
+                                    >
+                                </p>
+                                <p class="text-primary">
+                                    <b>NEXT_PUBLIC_STRIPE_SECRET_KEY= "your_key"</b>
+                                </p>
+                                <p class="text-primary">
+                                    <b>NEXT_PUBLIC_PAYPAL_CLIENT_KEY="your_key"</b>
+                                </p>
+                                <p class="text-primary">
+                                    <b>NEXT_PUBLIC_HOST_SOCKET ="your domain name" </b>
+                                </p>
+                                <p><b> and other things like as below image </b></p>
+                                <img src="assets/images/server/vps/vps1_7.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> build the yarn  </b></p>
+                                <p class="text-primary"><b>yarn installs</b></p>
+                                <img src="assets/images/server/vps/vps1_8.png" alt="" class="img-responsive">
+                                <p><b> then  </b></p>
+                                <p class="text-primary"><b>yarn starts</b></p>
+                            </li>
+                            <li>
+                                <p><b> add pm2 </b></p>
+                                <p class="text-primary"><b>yarn add pm2 -g</b></p>
+                                <img src="assets/images/server/vps/vps1_9.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> now go to supervisor  </b></p>
+                                <p class="text-primary"><b>cd /etc/supervisor/conf.d</b></p>
+                                <p class="text-primary"><b>nano cron.conf</b></p>
+                                <p><b> add here node program  </b></p>
+                                <img src="assets/images/server/vps/vps1_10.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> Then run these command</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl reread</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl update</b></p>
+                                <p class="text-primary"><b>sudo supervisorctl status</b></p>
+                                <img src="assets/images/server/vps/vps_24.png" alt="" class="img-responsive">
+                            </li>
+                            <li>
+                                <p><b> if not working then build the yarn again </b></p>
+                                <p class="text-primary"><b>yarn installs</b></p>
+                                <img src="assets/images/server/vps/vps1_8.png" alt="" class="img-responsive">
+                                <p><b> then  </b></p>
+                                <p class="text-primary"><b>yarn starts</b></p>
+                            </li>
+                            <li>
+                                <p><b> Now all done. just open browser and check site </b></p>
+                                <img src="assets/images/server/vps/vps1_11.png" alt="" class="img-responsive">
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <h3 class="title-tag"> <b>Installation (user part)</b></h3>
+                    <div class="well">
+                        <ul>
+                            <li>It's a super easy installation process</li>
+                            <li><b>Before deployment edit your .env and add all your backend server info</b></li>
+                            <img src="assets/images/install/9.png" alt="" class="img-responsive">
+                            <li>Go to github</li>
+                            <img src="assets/images/install/1.png" alt="" class="img-responsive">
+                            <li>If you have a account sign in if you dont have an account then signup</li>
+                            <img src="assets/images/install/2.png" alt="" class="img-responsive">
+                            <li>After login click on the new button on the left top side</li>
+                            <img src="assets/images/install/3.png" alt="" class="img-responsive">
+                            <li>Type a name for your project and click create repository</li>
+                            <img src="assets/images/install/4.png" alt="" class="img-responsive">
+                            <li>Type all the commands and upload your project to git</li>
+                            <img src="assets/images/install/5.png" alt="" class="img-responsive">
+                            <li>Now login to vercel.com with github</li>
+                            <img src="assets/images/install/8.png" alt="" class="img-responsive">
+                            <li>Then click on the add new dropdown then click on the project option</li>
+                            <img src="assets/images/install/6.png" alt="" class="img-responsive">
+                            <li>Then you can find your github project name there click on import and your website deployment will start</li>
+                            <img src="assets/images/install/7.png" alt="" class="img-responsive">
+                            <li>And your project will be successfully deployed</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Some configuration </h2>
+                    <div class="well">
+                        <li>
+                            <b>You need to run the queue all time with the help of supervisor. Here we use the redis server for withdrawal process</b><br>
+                            <b>When user place a withdrawal order it will go to queue</b><br>
+                            <b>some command -> need to run always </b><br>
+                            <b>"php artisan schedule:run"</b><br>
+                            <b>"php artisan horizon"</b><br>
+                            <b>"php artisan websockets:serve --port=6005"</b> (port can change)<br>
+
+                        </li>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Admin Panel</h2>
+                    <div class="well">
+                        <li>
+                            <b>Admin panel is developed with Laravel 8 </b>
+                        </li>
+                        <li>
+                            <b>The database is MySql</b>
+                        </li>
+                    </div>
+                    <h3 class="title-tag">Auth System</h3>
+                    <div class="well">
+                        <li>
+                            <b>Login </b>
+                            <img src="assets/images/landing/landing.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Forgot password </b>
+                            <img src="assets/images/auth/auth_forgot.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Reset password </b>
+                            <img src="assets/images/auth/auth_reset.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Dashboard</h3>
+                    <div class="well">
+                        <li>
+                            <b>Admin Dashboard </b>
+                            <img src="assets/images/admin/admin_dashboard.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Coin Settings</h3>
+                    <div class="well">
+                        <li>
+                            <b>Coin list </b> <br>
+                            <p>From here admin can active or deactive any coin </p>
+                            <img src="assets/images/admin/admin_coin_list.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <p>From here admin can update the coin rate with USD, that show in coin price</p>
+                            <img src="assets/images/admin/admin_coin_list_2.png" alt="" class="img-responsive"><br>
+                        </li>
+
+                        <li>
+                            <b>New Coin Add , from here you can add new coin  </b>
+                            <p>coin type : <span style="color: red">Please make sure your coin type is right. Never input wrong coin type</span></p>
+                            <p>coin network : <span style="color: red">(coin payment or personal network bitcoin base node)Please make sure your coin network is right.You never change this network. So be careful</span></p>
+                            <img src="assets/images/admin/admin_coin_add.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Configuration , from here you can update coin </b>
+                            <img src="assets/images/admin/admin_coin_edit.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for Coin Payment Setting) </b>
+                            <img src="assets/images/admin/admin_coin_payment.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for Bitcoin Api Setting) </b>
+                            <img src="assets/images/admin/admin_coin_bitcoin.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for Bitgo Setting) </b>
+                            <img src="assets/images/admin/admin_coin_bitgo.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for Bitgo Api Setting) </b>
+                            <img src="assets/images/admin/admin_coin_bitgo_api.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for ERC20 Api Setting) </b>
+                            <img src="assets/images/admin/admin_coin_erc20.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (for BEP20 Api Setting) </b>
+                            <img src="assets/images/admin/admin_coin_bep20.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Api Setup (BEP20 or ERC20 calling api ) </b>
+                            <br>(It should be same as image or also changeable)
+                            <img src="assets/images/admin/admin_coin_erc20_api.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Coin Pairs</b>
+                            <p>Trading pair of base coin and trade coin</p>
+                            <p>By clicking add new pair admin can add new coin pair </p>
+                            <p>Also update the coin pair </p>
+                            <img src="assets/images/admin/admin_coin_pairs.png" alt="" class="img-responsive"><br>
+                            <br>
+                            <p>if you want you can update your chart data with cryptocompare historical data . we take the data from api and save it to database,  when trade happened in your site it also save in database and show you the latest price</p>
+                            <p>if you don't need this just ignore please. no problem</p>
+                            <img src="assets/images/admin/admin_coin_pair_2.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">User Management</h3>
+                    <div class="well">
+                        <li>
+                            <b>User list (Active user list, suspended , deleted, pending email/phone verify user list)</b>
+                            <img src="assets/images/admin/admin_users.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Profile</b>
+                            <img src="assets/images/admin/admin_user_profile.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Add New User</b>
+                            <img src="assets/images/admin/admin_user_add.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">User KYC</h3>
+                    <div class="well">
+                        <li>
+                            <b>Pending id verification</b>
+                        </li>
+                        <li>
+                            <p>Pending kyc list</p>
+                            <p> In details page ,Pending id verify approve or reject process</p>
+                            <img src="assets/images/admin/admin_kyc.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Wallet </h3>
+                    <div class="well">
+                        <li>
+                            <b> User Wallet List</b>
+                            <p>All list of user wallets</p>
+                            <img src="assets/images/admin/admin_wallets.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b> Send coin to user</b>
+                            <p>admin can send coin to any user's wallet if he want</p>
+                            <img src="assets/images/admin/admin_wallet_send.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b> Send coin history </b>
+                            <img src="assets/images/admin/admin_wallet_send.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Deposit/Withdrawal Report </h3>
+                    <div class="well">
+                        <li>
+                            <b> All Transaction History</b>
+                            <p>Deposit list of user</p>
+                            <img src="assets/images/admin/admin_deposit.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <p>Withdrawal list of user</p>
+                            <img src="assets/images/admin/admin_withdrawals.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Pending Withdrawal</b>
+                            <p>From here admin can accept or reject the pending withdrawals</p>
+                            <img src="assets/images/admin/admin_pending_withdrawals.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Trade Report</h3>
+                    <div class="well">
+                        <li>
+                            <b> All buy order list</b>
+                            <img src="assets/images/admin/admin_buy_order.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>All Sell order list</b>
+                            <img src="assets/images/admin/admin_sell_order.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>All Stop limit order list</b>
+                            <img src="assets/images/admin/admin_stop_limit.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>All Trade list</b>
+                            <img src="assets/images/admin/admin_transactions.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Token Deposit</h3>
+                    <div class="well">
+                        <li>
+                            <b> Token pending deposit</b>
+                            <p>Suppose user deposit any token to system but not fully deposited for any reason, so from here admin can approve or reject it</p>
+                            <img src="assets/images/admin/admin_pending_deposit.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Estimate gas sent report</b>
+                            <img src="assets/images/admin/admin_gas_sent_history.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Admin token receive history</b>
+                            <img src="assets/images/admin/admin_token_receive_history.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>All Trade list</b>
+                            <img src="assets/images/admin/admin_transactions.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Notification </h3>
+                    <div class="well">
+                        <li>
+                            <b> Send notification to all user</b>
+                            <img src="assets/images/admin/admin_notification.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Send Bulk Email</b>
+                            <img src="assets/images/admin/admin_bulk_email.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Language List </h3>
+                    <div class="well">
+                        <li>
+                            <b> Language List , admin can modify from here</b>
+                            <img src="assets/images/admin/admin_language.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Currency List </h3>
+                    <div class="well">
+                        <li>
+                            <b> Currency List , admin can modify from here</b>
+                            <p>get all currency : if click then get all the currency</p>
+                            <p>Live update rate : if click then update the rate from api</p>
+                            <p>Add New Currency : able to add new currency</p>
+                            <img src="assets/images/admin/admin_currency.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Country List </h3>
+                    <div class="well">
+                        <li>
+                            <b> Country List , admin can modify from here</b>
+                            <img src="assets/images/admin/admin_country.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <hr>
+                    <h3 class="title-tag">Fiat Deposit </h3>
+                    <div class="well">
+                        <li>
+                            <b> fiat deposit pending list, from here admin can approve or reject the deposit</b>
+                            <b> fiat deposit rejected list</b>
+                            <b> fiat deposit approve list</b>
+                            <img src="assets/images/admin/admin_fiat_deposit.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> fiat deposit bank payment</b>
+                            <b> admin bank list</b>
+                            <img src="assets/images/admin/admin_bank.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> payment method list</b>
+                            <img src="assets/images/admin/admin_fiat_payment_method.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">FAQ </h3>
+                    <div class="well">
+                        <li>
+                            <b> Faq list</b>
+                            <img src="assets/images/admin/admin_faq.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Admin Settings </h3>
+                    <div class="well">
+                        <li>
+                            <b> General Setting</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <img src="assets/images/admin/admin_general.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Email Setting</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <img src="assets/images/admin/admin_email.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Twillo Setting</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <img src="assets/images/admin/admin_twillo.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Google Captcha Setting</b> <br>
+                            <b>if you stop this feature you can disable it from here</b>
+                            <img src="assets/images/admin/admin_captcha.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Coin Payment Setting</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <p>for more info please follow our coin payment integration part</p>
+                            <img src="assets/images/admin/admin_payment.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Personal Node Setting (Bitcoin base)</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <p>add here your bitcoin base credential</p>
+                            <img src="assets/images/admin/admin_node.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Trade fees Setting</b>
+                            <p>Check this carefully and update the all things using the input label</p>
+                            <img src="assets/images/admin/admin_trade_fees.png" alt="" class="img-responsive">
+                        </li>
+
+                        <li>
+                            Referral Setting <br>
+                            <p><b>we have 3 level referral bonus, when user make external withdrawal then it distribute instantly</b></p>
+                            <img src="assets/images/admin/admin_referral.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            Some configuration setting <br>
+                            <img src="assets/images/admin/admin_config.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Feature Settings </h3>
+                    <div class="well">
+                        <li>
+                            <b>Update cookie setting </b>
+                            <ul>
+                                <li>Enable cookie : yes or no, that means it shows or not in user end</li>
+                                <li>Cookie Header Text  : you can change Cookie title from here</li>
+                                <li>Cookie Button Text   : you can change text from here</li>
+                                <li>Cookie description    : detail text of cookie</li>
+                                <li>Select page for cookie    : when user click the button which page you want to show</li>
+                                <li>Cookie Image    : option for cookie image</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_cookie_setting.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Update Live Chat api </b>
+                            <ul>
+                                <li>Enable live chat : yes or no, that means it shows or not in user end</li>
+                                <li>Chat api key   : you can set chat api key from here</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_live_chat.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Swap feature enable/disable </b>
+                            <ul>
+                                <li>Enable Swap : yes or no, that means it shows or not in user end</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_swap_setting.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Fiat deposit enable disable </b>
+                            <ul>
+                                <li>Enable Fiat Deposit : yes or no, that means it shows or not in user end</li>
+                                <li>Enable Fiat Deposit 2FA   : yes or no, that means it require or not in user end when try to send fiat deposit request</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_fiat_deposit_setting.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Api Settings </h3>
+                    <div class="well">
+                        <li>
+                            <b>CryproCompare Api Details </b>
+                            <ul>
+                                <li>CryptoCompare api key : for updating chart data, coin rate we use this api key</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_cryptocompare.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Stripe Settings </b>
+                            <ul>
+                                <li>Stripe Publishable key : public key</li>
+                                <li>Stripe Secret key  : secret key</li>
+                            </ul>
+                            <img src="assets/images/admin/admin_stripe_setting.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Landing Settings </h3>
+                    <div class="well">
+                        <li>
+                            <b>Landing Related Setting can find here with specific section </b>
+                            <img src="assets/images/admin/admin_landing_setting.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b>Landing Banner Setting</b>
+                            <p>From here admin can add new banner also edit banner</p>
+                            <img src="assets/images/admin/admin_landing_banner.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Landing Feature Setting</b>
+                            <p>From here admin can add new feature also edit feature</p>
+                            <img src="assets/images/admin/admin_landing_feature.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Landing social media Setting</b>
+                            <img src="assets/images/admin/admin_landing_media.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <b> Landing announcement Setting</b>
+                            <img src="assets/images/admin/admin_landing_announcement.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">User Panel </h2>
+                    <p><b>Developed with Next Js</b></p>
+                    <hr>
+                    <h3 class="title-tag">User landing page</h3>
+                    <div class="well">
+                        <li>
+                            <b>User landing </b>
+                            <img src="assets/images/user/user_landing.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">User Auth</h3>
+                    <div class="well">
+                        <li>
+                            <b>User Login </b>
+                            <img src="assets/images/auth/auth_login.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Signup </b>
+                            <img src="assets/images/auth/auth_signup.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Forgot password </b>
+                            <img src="assets/images/auth/auth_forgot.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Reset password </b>
+                            <img src="assets/images/auth/auth_reset.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">User exchange page</h3>
+                    <div class="well">
+                        <li>
+                            <p><b>User Exchange Dashboard </b></p>
+                            <p>this is the main page of this site, so explore this page perfectly please</p>
+                            <img src="assets/images/user/user_dashboard.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Profile</h3>
+                    <div class="well">
+                        <li>
+                            <b>User Profile </b>
+                            <img src="assets/images/user/user_profile.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>Edit Profile </b>
+                            <img src="assets/images/user/user_edit_profile.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Change Password</b>
+                            <img src="assets/images/user/user_password.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User KYC</b>
+                            <img src="assets/images/user/user_kyc.png" alt="" class="img-responsive"><br>
+                            <img src="assets/images/user/user_kyc_2.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Phone verification</b>
+                            <img src="assets/images/user/user_phone.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Security</b>
+                            <img src="assets/images/user/user_security.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Gauth </b>
+                            <img src="assets/images/user/user_gauth.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Wallet (Deposit/Withdrawal)</h3>
+                    <div class="well">
+                        <li>
+                            <b>User Wallet </b>
+                            <img
+                                src="assets/images/user/user_wallet.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b
+                            >You can deposit any coin , and the deposit address generated
+                                with coinpayment. Here user can generate new address and copy
+                                it and send to others</b
+                            >
+                            <img
+                                src="assets/images/user/user_wallet_deposit.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b
+                            >You can deposit any coin from bank,wallet,paypal and from
+                                credit card</b
+                            >
+                            <img
+                                src="assets/images/user/deposit.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+
+                            <img
+                                src="assets/images/user/wallet-deposit.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                            <img
+                                src="assets/images/user/credit-card.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                            <img
+                                src="assets/images/user/paypal.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b
+                            >User can withdrawal to both internal and external address.
+                                Before withdrawal user must have activate gauth</b
+                            >
+                            <img
+                                src="assets/images/user/user_withdrawal.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+
+                        <li>
+                            <b>User withdrawal report</b>
+                            <img
+                                src="assets/images/user/user_withdrawal_report.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b>User deposit report</b>
+                            <img
+                                src="assets/images/user/user_deposit_report.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b>User wallet swap</b>
+                            <img
+                                src="assets/images/user/user_swap.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                        <li>
+                            <b>User wallet swap history </b>
+                            <img
+                                src="assets/images/user/user_swap_history.png"
+                                alt=""
+                                class="img-responsive"
+                            /><br />
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Exchange </h3>
+                    <div class="well">
+                        <li>
+                            <b>Exchange dashboard, from here you can place buy, sell, and stop limit order </b><br>
+                            <img src="assets/images/user/user_dashboard.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Exchange Report</h3>
+                    <div class="well">
+                        <li>
+                            <b>User Buy order</b><br>
+                            <img src="assets/images/user/user_buy_order_report.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User Sell order</b><br>
+                            <img src="assets/images/user/user_sell_report.png" alt="" class="img-responsive"><br>
+                        </li>
+                        <li>
+                            <b>User transaction report</b><br>
+                            <img src="assets/images/user/user_transaction.png" alt="" class="img-responsive"><br>
+                        </li>
+                    </div>
+                    <hr>
+                    <h3 class="title-tag">Referral</h3>
+                    <div class="well">
+                        <li>
+                            <b>User referral link. Copy the url and also share it to social media</b>
+                        </li>
+                        <li>
+                            <b>User referral user count and reference details</b>
+                        </li>
+                        <li>
+                            <b>User referral commission history</b>
+                            <img src="assets/images/user/user_referral.png" alt="" class="img-responsive">
+                            <img src="assets/images/user/user_referral_2.png" alt="" class="img-responsive">
+                        </li>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Multi Language</h2>
+                    <p><b>only for admin end</b></p>
+                    <div class="well">
+                        <li>
+                            <b>our system support multi language, for this you have some configuration </b><br>
+                        </li>
+                        <br>
+                        <div style="border: 1px solid orange">
+                            <li>
+                                <b>How to add a new language ------></b>
+                            </li>
+                            <br>
+                            <b>To add a new language you need add the new language file in .json format</b><br>
+                            <b>suppose i want to add Indonesian language</b> <br>
+                            <b>go to "project_name/resources/lang" and inside this add new file "id.json"</b> <br>
+                            <img src="assets/images/lang/lang_1.png" alt="" class="img-responsive">
+                            <br>
+                            <hr>
+                            <b>Then go to "project_name/app/Helper/helpers.php" file.</b> <br>
+                            <b>there is a function "langName()"</b><br>
+                            <b>inside the function add your new language key, look like the below screenshot</b> <br>
+                            <img src="assets/images/lang/lang_2.png" alt="" class="img-responsive"> <br>
+                            <hr>
+                            <b>then open the terminal of the project path and run this command to sync all language key --- </b><br>
+                            <p>like "/var/www/tradexpro-exchange/"</p>
+                            <p style="border: 1px solid red">
+                                <b>"php artisan translation:sync-missing-translation-keys "</b> <br>
+                            </p>
+                            <hr>
+                            <b>After this command now all language key automatically added to the new "id.json" file</b><br>
+                            <img src="assets/images/lang/lang_4.png" alt="" class="img-responsive"> <br>
+                            <hr>
+                            <b>then you need to add here, all the translated text one by one</b> <br>
+                            <img src="assets/images/lang/lang_5.png" alt="" class="img-responsive"> <br>
+                            <hr>
+                            <b>We already added here some language json file, you can put here all the translated text one by one</b> <br>
+                            <b>for the es.json file ------</b>
+                            <img src="assets/images/lang/lang_6.png" alt="" class="img-responsive"> <br>
+                            <hr>
+                            <b>Now we can change the language from setting and check the translation</b> <br>
+
+                        </div>
+                    </div>
+                </div>
+            <hr>
+                <div class="section">
+                    <h2 class="title-tag">Wallet notifier for personal node</h2>
+                    <div class="well">
+                        <li>for the wallet external deposit you should have some configuration at you node config file. if you faces any problem contact with a node expert, or our team will try to help you</li>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Coin Payment Integration</h2>
+                    <div class="well">
+                        <h1 class="text-center"> <b> Integrating coinpayments (account setup) </b></h1> <br>
+                        <h3>1) <b>Account Setup</b></h3>
+                        <ul>
+                                    <li>
+                                        <p><b>Account Settings and Important Information</b></p>
+
+
+                                        <p>To start accepting cryptocurrency payments, the first step is the create a CoinPayments account! Get started by following along the steps below to sign up for
+                                            a CoinPayments account and customize the account settings that are ideal for your business.</p>
+
+                                        <p><b> SIGN UP</b></p>
+                                        <a href="https://www.coinpayments.net/register">Sign up for a CoinPayments account here or click </a> the Sign Up button in the top right corner of the  <a href="https://www.coinpayments.net/register">
+                                        CoinPayments website </a>.
+                                        <br>
+                                        Fill out the appropriate details on the Create New Account form. <a href="https://www.coinpayments.net/register">Sign Up Form</a>  <br>
+                                        <img src="assets/images/coin/sign-up-screen.png" alt="" class="img-responsive">
+                                        <br>
+                                        After signing up, verify your account by clicking the activation link in the email sent to the email address you used to register your account.  Account Activation Email <br>
+                                        <img src="assets/images/coin/step-2.png" alt="" class="img-responsive"><br>
+
+                                        <h3><b>2) ACCOUNT SETTINGS</b></h3>
+                                        Find your profile and account settings here as well as the important merchant information (Merchant ID, IPN Key, etc…) <br>
+
+                                        Login to your CoinPayments account for the first time. <br>
+                                        Check your email for the verification code to login.  Email Verification Code <br>
+                                        <img src="assets/images/coin/2FA-email-with-code.png" alt="" class="img-responsive"><br>
+                                        Go to: “ACCOUNT -> ACCOUNT SETTINGS“.  Account Settings <br>
+                                        <img src="assets/images/coin/step-3A.png" alt="" class="img-responsive"><br>
+                                        In the “BASIC SETTINGS” tab, you will find your Merchant ID. Save/Copy your Merchant ID somewhere for later use.   Merchant ID <br>
+                                        <img src="assets/images/coin/CoinPayments-merchant-ID.png" alt="" class="img-responsive"><br>
+                                        In the “PUBLIC INFO” tab, you can enter your Name, Email, URL that will be displayed publicly to customers sending payments.  Public Info <br>
+                                        <img src="assets/images/coin/step-3C.png" alt="" class="img-responsive"><br>
+                                        In the “LOGIN & SECURITY” tab, change 2FA method from email to Google Authenticator or one of the other more convenient options.  Login & Security <br>
+                                        <img src="assets/images/coin/step-3D.png" alt="" class="img-responsive"><br>
+                                        In the “MERCHANT SETTINGS” tab, set your IPN Secret (this can be any strong/random string of characters). Save/Copy your IPN Secret somewhere for later use. Select your base currency and also toggle which notification emails to receive.   Merchant Settings <br>
+                                        <img src="assets/images/coin/step-3E.png" alt="" class="img-responsive"><br>
+                                        <h3><b>3) COIN SETTINGS</b></h3>
+                                        Modify which coins you want to accept as payment and what to do after receiving a payment
+                                        <br>
+
+                                        Go to: “ACCOUNT -> COIN ACCEPTANCE SETTINGS“. Coin Acceptance Settings Navigation
+                                        <img src="assets/images/coin/step-4A.png" alt="" class="img-responsive"><br>
+                                        <br>
+                                        Select which coins you want to accept as payment by checking the box in front of each coin. Coin Acceptance Selection
+                                        <img src="assets/images/coin/step-4B-1.png" alt="" class="img-responsive"><br>
+                                        <br>
+                                        Make sure to scroll all the way to the bottom of the page and click “Update Coin Preferences”.
+                                        <br>
+                                        <img src="assets/images/coin/coin-enabled.png" alt="" class="img-responsive"><br>
+                                        This is the minimum you need to configure to begin accepting crypto payments to your store. Leave the rest of the options for later (ie. conversion, fiat settlement, payment forwarding)
+                                        <br>
+                                        <h3><b>4) API KEYS</b></h3>
+                                        You will need the information in this section later to link your CoinPayments account to your eCommerce store. The API keys are what connects your store with the CoinPayments payment system.
+                                        <br>
+
+                                        Go to: “ACCOUNT -> API KEYS“.  API Keys Navigation <br>
+                                        <img src="assets/images/coin/step-5.png" alt="" class="img-responsive"><br>
+                                        click the edit permission button. here you need to allow the api access and save it , otherwise the coin payment api never work
+                                        <br>
+                                        <img src="assets/images/coin/api_permission.png" alt="" class="img-responsive"><br>
+
+                                        Use the API Key that’s already there, or generate a new key by clicking the “GENERATE NEW KEY” button.   API Keys
+                                        <br>
+                                        <img src="assets/images/coin/CoinPayments-API-Keys.png" alt="" class="img-responsive"><br>
+                                        Save/Copy your API Public Key and your API Private Key somewhere for later use.
+                                        <br>
+                                        By the time you have finished going through the above step-by-step process, you should have recorded the following information for future use:
+                                        <br>
+
+                                        MERCHANT ID <br>
+                                        IPN SECRET <br>
+                                        API PUBLIC KEY <br>
+                                        API PRIVATE KEY <br>
+                                        <p><b>This will add to your admin coin payment setting</b></p>
+                                        <br>
+                                        <img src="assets/images/admin/admin_payment.png" alt="" class="img-responsive">
+                                        <br>
+                                        <h3><b>5) Wallet Notifier</b></h3>
+                                        <p><b>Deposit with coin payment</b></p>
+                                        add here your IPN Secret and notifier url
+                                        <br> this will help you to deposit any coin to your site
+                                        <br> your url /api/coin-payment-notifier (example : https://tradexpro-laravel.cdibrandstudio.com/api/coin-payment-notifier)
+                                        <img src="assets/images/coin/url.png" alt="" class="img-responsive"><br>
+                                    </li>
+                                    <br>
+                                    <br>
+                                </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="section">
+                    <h2 class="title-tag">Public Api</h2>
+                    <div class="well">
+                        <li>
+                            <p>Get market price</p>
+                            <p>
+                                <a href="https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/price/{symbol}"></a>
+                                https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/price/BTC_USDT
+                            </p>
+                            <table>
+                                <tr>
+                                    <th>Request Parameter</th>
+                                    <th>Data Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>string</td>
+                                    <td>false</td>
+                                    <td>coin pair like BTC_USDT,LTC_USDT,ETH_USDT,USDT_BTC etc</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <br>
+                        <li>
+                            <p>The response is a list of data values displayed in an array in the following order:</p>
+                            <p>if url is "https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/price/BTC_USDT" then response = </p>
+                            <p>['success' => true/false, 'message' => 'success or error message', 'data' => {}</p>
+                            <p>if url is "https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/price" then response = </p>
+                            <p>['success' => true/false, 'message' => 'success or error message', 'data' => [{},{},....]</p>
+                            <table>
+                                <tr>
+                                    <th>Data Field</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>string</td>
+                                    <td>symbol name</td>
+                                </tr>
+                                <tr>
+                                    <td>trade_coin</td>
+                                    <td>string</td>
+                                    <td>trade coin full name</td>
+                                </tr>
+                                <tr>
+                                    <td>base_coin</td>
+                                    <td>string</td>
+                                    <td>base coin full name</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>string</td>
+                                    <td>current price</td>
+                                </tr>
+                                <tr>
+                                    <td>price_change_24h</td>
+                                    <td>string</td>
+                                    <td>price change in last 24 hour</td>
+                                </tr>
+                                <tr>
+                                    <td>volume_24h</td>
+                                    <td>string</td>
+                                    <td>last 24 hour volume</td>
+                                </tr>
+                                <tr>
+                                    <td>high_24h</td>
+                                    <td>string</td>
+                                    <td>highest price of last 24 hour</td>
+                                </tr>
+                                <tr>
+                                    <td>low_24h</td>
+                                    <td>string</td>
+                                    <td>lowest price of last 24 hour</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                    </div>
+                    <div class="well">
+                        <li>
+                            <p>Get market orderBook data</p>
+                            <p>
+                                <a href="https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/orderBook/{symbol}"></a>
+                                https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/orderBook/BTC_USDT
+                            </p>
+                            <table>
+                                <tr>
+                                    <th>Request Parameter</th>
+                                    <th>Data Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>string</td>
+                                    <td>true</td>
+                                    <td>coin pair like BTC_USDT,LTC_USDT,ETH_USDT,USDT_BTC etc</td>
+                                </tr>
+                                <tr>
+                                    <td>limit</td>
+                                    <td>Integer</td>
+                                    <td>false</td>
+                                    <td>maximum number of records returned</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>string</td>
+                                    <td>false</td>
+                                    <td>order type buy, sell , buy_sell, default is buy_sell</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                        <br>
+                        <li>
+                            <p>The response is a list of data values displayed in an array in the following order:</p>
+                            <p>['success' => true/false, 'message' => 'success or error message', 'data' => ['type' => buy_sell,'limit' => 10, 'buys' => [{},{}..],, 'sells' => [{},{}..]]</p>
+                            <table>
+                                <tr>
+                                    <th>Data Field</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>string</td>
+                                    <td>quote units traded</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>string</td>
+                                    <td>trade price</td>
+                                </tr>
+                                <tr>
+                                    <td>total</td>
+                                    <td>string</td>
+                                    <td>total trade coin (amount * price)</td>
+                                </tr>
+                                <tr>
+                                    <td>exchanged</td>
+                                    <td>string</td>
+                                    <td>already exchanged amount</td>
+                                </tr>
+                                <tr>
+                                    <td>date_time</td>
+                                    <td>string</td>
+                                    <td>time the record was pushed</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                    </div>
+                    <div class="well">
+                        <li>
+                            <p>Get market trade data</p>
+                            <p>
+                                <a href="https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/trade/{symbol}"></a>
+                                https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/trade/BTC_USDT
+                            </p>
+                            <table>
+                                <tr>
+                                    <th>Request Parameter</th>
+                                    <th>Data Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>string</td>
+                                    <td>true</td>
+                                    <td>coin pair like BTC_USDT,LTC_USDT,ETH_USDT,USDT_BTC etc</td>
+                                </tr>
+                                <tr>
+                                    <td>limit</td>
+                                    <td>Integer</td>
+                                    <td>false</td>
+                                    <td>maximum number of records returned</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                        <br>
+                        <li>
+                            <p>The response is a list of data values displayed in an array in the following order:</p>
+                            <p>['success' => true/false, 'message' => 'success or error message', 'data' => ['limit' => 10, 'trade' => [{},{}..]]</p>
+                            <table>
+                                <tr>
+                                    <th>Data Field</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>string</td>
+                                    <td>quote units traded</td>
+                                </tr>
+                                <tr>
+                                    <td>price</td>
+                                    <td>string</td>
+                                    <td>trade price</td>
+                                </tr>
+                                <tr>
+                                    <td>last_price</td>
+                                    <td>string</td>
+                                    <td>market last traded price</td>
+                                </tr>
+                                <tr>
+                                    <td>price_order_type</td>
+                                    <td>string</td>
+                                    <td>taker's trade side (BUY, SELL)</td>
+                                </tr>
+                                <tr>
+                                    <td>total</td>
+                                    <td>string</td>
+                                    <td>total trade coin</td>
+                                </tr>
+                                <tr>
+                                    <td>time</td>
+                                    <td>string</td>
+                                    <td>time the record was pushed</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                    </div>
+                    <div class="well">
+                        <li>
+                            <p>Get market chart data</p>
+                            <p>
+                                <a href="https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/chart/{symbol}"></a>
+                                https://tradexpro-laravel.cdibrandstudio.com/api/v1/markets/chart/BTC_USDT
+                            </p>
+                            <p>Request </p>
+                            <table>
+                                <tr>
+                                    <th>Request Parameter</th>
+                                    <th>Data Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>symbol</td>
+                                    <td>string</td>
+                                    <td>true</td>
+                                    <td>coin pair like BTC_USDT,LTC_USDT,ETH_USDT,USDT_BTC etc</td>
+                                </tr>
+                                <tr>
+                                    <td>start_time</td>
+                                    <td>long</td>
+                                    <td>false</td>
+                                    <td>filters by time. The default value is 0.</td>
+                                </tr>
+                                <tr>
+                                    <td>end_time</td>
+                                    <td>long</td>
+                                    <td>false</td>
+                                    <td>filters by time. The default value is current time</td>
+                                </tr>
+                                <tr>
+                                    <td>interval</td>
+                                    <td>Integer</td>
+                                    <td>false</td>
+                                    <td>5 = 5minData, 15= 15 min Data, 30 = 30 min Data, 120 = 2 hour Data, 240 = 4 hour data, 1440 = 1 day data</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <br>
+                        <li>
+                            <p>The response is a list of candles data values displayed in an array in the following order:</p>
+                            <p>['success' => true/false, 'message' => 'success or error message', 'data' => [{},{},...]</p>
+                            <table>
+                                <tr>
+                                    <th>Data Field</th>
+                                    <th>Data Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>time</td>
+                                    <td>long</td>
+                                    <td>time the record was pushed</td>
+                                </tr>
+                                <tr>
+                                    <td>low</td>
+                                    <td>string</td>
+                                    <td>lowest price over the interval</td>
+                                </tr>
+                                <tr>
+                                    <td>high</td>
+                                    <td>string</td>
+                                    <td>highest price over the interval</td>
+                                </tr>
+                                <tr>
+                                    <td>open</td>
+                                    <td>string</td>
+                                    <td>price at the start time</td>
+                                </tr>
+                                <tr>
+                                    <td>close</td>
+                                    <td>string</td>
+                                    <td>price at the end time</td>
+                                </tr>
+                                <tr>
+                                    <td>volume</td>
+                                    <td>string</td>
+                                    <td>base units traded over the interval</td>
+                                </tr>
+
+                            </table>
+                        </li>
+                    </div>
+                </div>
+                <hr>
+                <div class="section">
+                    <h2 class="title-tag">Release log</h2>
+                    <div class="well">
+                        <pre>
+                            Version 1.1 ( September 2022 )
+                        </pre>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="title-tag">Thank You</h2>
+                    <div>
+                        <p>
+                            Again, thank you for purchasing Tradexpro exchange. If you need some help, or support please use email
+                            or contact form via codecanyon <a href="https://codecanyon.net/user/itechtheme" target="_blank">Profile
+                            site</a>.
+                        </p>
+                        <p>
+                            Hope you happy with the Tradexpro Exchange , system, all the best with your business.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <hr>
+                <div class="section">
+                    <p class="copyright">
+                        Copyright © 2022 . All rights reserved <a href="https://tradexpro-exchange.cdibrandstudio.com" target="_blank">Tradexpro Exchange</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/row-->
+    </div>
+    <!--/.fluid-container-->
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/rainbow/rainbow.min.js"></script>
+    <script src="assets/js/rainbow/language/generic.js"></script>
+    <script src="assets/js/rainbow/language/html.js"></script>
+    <script src="assets/js/rainbow/language/css.js"></script>
+    <script src="assets/js/rainbow/language/javascript.js"></script>
+    <script src="assets/js/rainbowlines/rainbow.linenumbers.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.tocify.min.js"></script>
+    <script src="assets/js/prettify.js"></script>
+    <script>
+        $(function () {
+
+            $("#web").tocify({
+                selectors: "h2,h3",
+                scrollTo: 60,
+                highlightOffset: 60,
+                extendPage: true
+            });
+            $("#app").tocify({
+                selectors: ".title-tag2",
+                scrollTo: 60,
+                highlightOffset: 60,
+                extendPage: true
+            });
+
+            prettyPrint();
+
+            $(".optionName").popover({
+                trigger: "hover",
+                container: "body"
+            });
+
+            $("a[href='#']").click(function (event) {
+
+                event.preventDefault();
+
+            });
+
+            Rainbow.color();
+        });
+    </script>
+
+</body>
+
+</html>

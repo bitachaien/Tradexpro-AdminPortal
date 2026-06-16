@@ -1,0 +1,105 @@
+## see usage at the end of file
+
+branch_to_merge="$1" ## core or evm or comb
+auto_push="$2" ## -y -Y | -n
+branches_to_merge_into=(
+  # core group
+  # "core-develop" "core-blog-main" "core-demotrade-main"
+  # "core-ico-main" "core-p2p-main" "core-support-main"
+  # "core-null-main"
+
+  # core comb group
+  # "core-blog-p2p-support"
+  # "core-blog-support" "core-ico-p2p-support"
+
+  # evm group
+  "evm-develop" "evm-blog-main" "evm-demotrade-main"
+  "evm-ico-main" "evm-p2p-main" "evm-support-main"
+  "evm-null-main"
+
+  # evm comb group
+  # "all-addons" "evm-blog-p2p-support" "evm-p2p-support"
+  # "evm-blog-support" "evm-blog-ico-p2p"
+  # "evm-ico-p2p-support" "evm-blog-ico-p2p-support"
+  # "evm-demo-ico-p2p"
+)
+
+if [ -z "$branch_to_merge" ]; then
+  echo "Need a branch name to merge"
+  echo "Usage: .git_merge.local.sh evm-main"
+  exit
+fi
+
+function run_commands() {
+  branch="$1"
+  echo "### Branch: ${branch}"
+  
+  echo "### git checkout $branch"
+  output=$(git checkout "$branch" 2>&1)
+  echo "$output"
+  if [[ "$output" == *"error:"* || "$output" == *"fatal:"* ]]; then
+    exit 
+  fi
+
+  echo "### git pull origin $branch ..."
+  output=$(git pull origin "$branch" 2>&1)
+  if [[ "$output" == *"error:"* || "$output" == *"fatal:"* ]]; then
+    echo "$output"
+    exit 
+  fi
+  
+  # merge conflict step
+  if [[ "$output" == *"Automatic merge failed;"* ]]; then
+    echo "Merge conflict detected. Please resolve the conflicts."
+    read -p "Press [Enter] to continue after resolving the conflicts..."
+  fi
+  
+  echo "### git pull origin $branch_to_merge ..."
+  output=$(git pull origin "$branch_to_merge" 2>&1)
+  if [[ "$output" == *"error:"* || "$output" == *"fatal:"* ]]; then
+    echo "$output"
+    exit 
+  fi
+
+  # merge conflict step
+  if [[ "$output" == *"Automatic merge failed;"* ]]; then
+    echo "Merge conflict detected. Please resolve the conflicts."
+    read -p "Press [Enter] to continue after resolving the conflicts..."
+  else
+    echo "Merged Automatically..."
+  fi
+
+  output=$(git status "$branch" 2>&1) &&
+
+  # push step
+  if [[ -z "$auto_push" && "$output" == *"Your branch is ahead of"* ]]; then
+  read -p "Do you want to push the changes? (y/n): " input
+    case "$input" in 
+      y|Y ) git push origin "$branch";;
+      n|N ) echo "";;
+      * ) echo "Invalid input";;
+    esac
+  elif [[ ("$auto_push" == "-y" || "$auto_push" == "-Y") && "$output" == *"Your branch is ahead of"* ]]; then
+    echo "### git push origin $branch..."
+    git push origin "$branch"
+  fi
+  printf "\n\n"
+}
+
+function start_merge() {
+  echo "branches_to_merge_into: ${branches_to_merge_into[@]}"
+  echo ""
+  # exit
+  for branch in "${branches_to_merge_into[@]}"; do
+    # echo "branch: $branch"
+    run_commands "$branch"
+    echo ""
+  done
+}
+start_merge
+
+## Usage: .git_merge.local.sh evm-main
+## it will megre "evm-main" into all "branches_to_merge_into" array
+## Be focused and very careful while using the script
+## wrong branch name can produce severe issues
+## use it responsibly
